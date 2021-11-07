@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0; 
-    /* Setting all the margins and paddings of elemnts to 0 in order to better visually adjust spacing */
+    /* Setting all the margins and paddings of elements to 0 in order to better visually adjust spacing */
 }
 
 body {
@@ -25,6 +25,7 @@ header h1 {
 header ul {
     margin-left: auto;
     margin-right: 100px;
+    
     /* Utilizing margin-left auto to create the gap between the h1 element and my list element, 
     and using margin right to give space bewtween end of list and end of container */
 
@@ -32,6 +33,43 @@ header ul {
 }
 
 header ul li {
-    display: inline; 
+    display: inline-flex; 
+    justify-content: space-between;
+    margin-left: 20px;
+    
+
     /* This is how I got the list to be horizontal instead of vertical. */
 }
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+#description {
+    background-color: blanchedalmond;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+    position: relative; /* to center the child h1 element I must first set 
+    this section element's position to relative */
+
+}
+
+#description h1{
+position: absolute; 
+top: 50%;
+left: 50%;
+/* setting the child h1 element's position as 
+absolute to prepare it for centering the element 
+with the center of the parent element */
+transform: translate(-50%,-50%);
+/* this some how centers the element by refrecning the top left corner of it. */
+
+
+}
+
