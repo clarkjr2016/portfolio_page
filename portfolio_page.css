@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
     /* Setting all the margins and paddings of elements to 0 in order to better visually adjust spacing */
 }
 
@@ -51,10 +52,12 @@ header ul li a:hover {
 }
 
 #description {
-    background-color: blanchedalmond;
-    background-size: cover;
+    background-image: url(images/Atlanta\ 2.jpg); 
+    background-size: auto;
     background-repeat: no-repeat;
-    height: 45vh;
+    /* This is how I input a background image to this section */
+    height: 60vh;
+    color: whitesmoke;
     position: relative; /* to center the child h1 element I must first set 
     this section element's position to relative */
 
@@ -73,3 +76,38 @@ transform: translate(-50%,-50%);
 
 }
 
+.sec_box {
+    width: 200px;
+    height: inherit;
+}
+/* styling for all of the child containers in section containers */
+
+#project_1 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: midnightblue;
+    height: 50vh;
+}
+/* styling my first project section and making it a flex container */
+
+#left_1 {
+   
+    margin: auto;
+    position: relative;
+    
+}
+/*Styling the left child container and giving it position relative so I can move the content inside it around. */
+
+#right_1 {
+    
+    margin: auto;
+}
+/* styling right child container *more work needs to be done */
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    
+}
